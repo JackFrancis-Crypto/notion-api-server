@@ -2,13 +2,20 @@
   "version": 2,
   "functions": {
     "api/notion.js": {
-      "runtime": "@vercel/node"
+      "runtime": "nodejs18.x"
+    },
+    "api/test.js": {
+      "runtime": "nodejs18.x"
     }
   },
   "routes": [
     {
       "src": "/api/notion",
-      "dest": "api/notion"
+      "dest": "api/notion.js"
+    },
+    {
+      "src": "/api/test",
+      "dest": "api/test.js"
     }
   ]
 }
