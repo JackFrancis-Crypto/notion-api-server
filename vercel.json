@@ -1,6 +1,10 @@
 {
+  "functions": {
+    "api/index.js": {
+      "runtime": "nodejs22.x"
+    }
+  },
   "routes": [
-    { "src": "/api/test", "dest": "api/test.js" },
-    { "src": "/api/notion", "dest": "api/notion.js" }
+    { "src": "/api", "dest": "/api/index.js" }
   ]
 }
